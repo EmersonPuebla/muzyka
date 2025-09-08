@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>muzyka!</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/cart.css" />
+  </head>
+  <body>
+    <header id="navbar">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#products">Productos</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="cart.html">Carrito</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="cart">
+        <article>
+          <figure>
+            <img
+              src="assets/img/audioslave.jpg"
+              alt="Portada del álbum Audioslave"
+            />
+            <figcaption>
+              <a
+                href="https://www.discogs.com/release/368264-Audioslave-Audioslave"
+                >Mas detalles de esta edicion aqui</a
+              >
+            </figcaption>
+          </figure>
+          <div class="product-details">
+            <h2>Audio Slave</h2>
+            <p class="price">$9,990</p>
+            <button>Quitar del carrito</button>
+            <div class="description">
+              <p>
+                Audioslave es el título del álbum debut de estudio homónimo
+                grabado por el supergrupo estadounidense de rock alternativo
+                Audioslave. Fue lanzado al mercado por las empresas
+                discográficas Epic Records e Interscope Records el 18 de
+                noviembre de 2002 en el Reino Unido y un día después en los
+                Estados Unidos.
+              </p>
+            </div>
+            <details>
+              <summary>Mas detalles</summary>
+              <dl class="album-info">
+                <dt>Label:</dt>
+                <dd>
+                  Epic – EK 86968, Interscope Records – EK 86968, Epic – 86968,
+                  Interscope Records – 86968
+                </dd>
+
+                <dt>Format:</dt>
+                <dd>CD, Album, DADC, No Rubin Credit</dd>
+
+                <dt>Country:</dt>
+                <dd>US</dd>
+
+                <dt>Released:</dt>
+                <dd>Nov 19, 2002</dd>
+
+                <dt>Genre:</dt>
+                <dd>Rock</dd>
+
+                <dt>Style:</dt>
+                <dd>Hard Rock</dd>
+              </dl>
+            </details>
+          </div>
+        </article>
+        <article>
+          <figure>
+            <img src="assets/img/Bluegrass_capn_jazz_front.jpg" alt="" />
+            <figcaption>
+              <a
+                href="https://www.discogs.com/release/1439446-Capn-Jazz-Burritos-Inspiration-Point-Fork-Balloon-Sports-Cards-In-The-Spokes-Automatic-Biographies-K"
+                >Mas detalles de esta edicion aqui</a
+              >
+            </figcaption>
+          </figure>
+          <div class="product-details">
+            <h2>Shmap'n Shmazz</h2>
+            <h3>$14,990</h3>
+            <button>Quitar del carrito</button>
+            <div class="description">
+              <p>
+                más conocido como Shmap'n Shmazz, es el único álbum de estudio
+                de larga duración de la banda emo estadounidense Cap'n Jazz. Fue
+                publicado en 1995 por el sello discográfico Man With Gun. La
+                formación de Cap'n Jazz en el momento de la grabación estaba
+                compuesta por Tim Kinsella como voz principal, Davey von Bohlen
+                y Victor Villarreal a la guitarra, Sam Zurick al bajo y Mike
+                Kinsella a la batería.
+              </p>
+              <details>
+                <summary>Mas detalles</summary>
+                <dl class="album-info">
+                  <dt>Label:</dt>
+                  <dd>Man With Gun – MWG CD02</dd>
+
+                  <dt>Format:</dt>
+                  <dd>CD, Album</dd>
+
+                  <dt>Country:</dt>
+                  <dd>US</dd>
+
+                  <dt>Released:</dt>
+                  <dd>1995</dd>
+
+                  <dt>Genre:</dt>
+                  <dd>Rock</dd>
+
+                  <dt>Style:</dt>
+                  <dd>Emo, Midwest Emo</dd>
+                </dl>
+              </details>
+            </div>
+          </div>
+        </article>
+        <article>
+          <figure>
+            <img src="assets/img/billy_talent_ii_front.jpg" alt="" />
+            <figcaption>
+              <a
+                href="https://www.discogs.com/release/727005-Billy-Talent-Billy-Talent-II"
+                >Mas detalles de esta edicion aqui</a
+              >
+            </figcaption>
+          </figure>
+          <div class="description">
+            <h2>Billy Talent II</h2>
+            <h3>$15,990</h3>
+            <button>Quitar del carrito</button>
+            <p>
+              Billy Talent II es el segundo álbum de estudio de la banda
+              canadiense de punk rock Billy Talent, publicado el 27 de junio de
+              2006. El álbum debutó en el número 1 en la Canadian Albums Chart,
+              vendiendo 48.000 copias en su primera semana.​ El álbum también
+              alcanzó el número 1 en las listas de álbumes de Alemania.
+            </p>
+            <details>
+            <summary>Mas detalles</summary>
+            <dl>
+                <dt>Label:</dt>
+                <dd>Atlantic – 7567-83941-2</dd>
+
+                <dt>Format:</dt>
+                <dd>CD, Album</dd>
+
+                <dt>Country:</dt>
+                <dd>Europe</dd>
+
+                <dt>Released:</dt>
+                <dd>Jun 26, 2006</dd>
+
+                <dt>Genre:</dt>
+                <dd>Rock</dd>
+
+                <dt>Style:</dt>
+                <dd>Alternative Rock, Pop Punk, Punk</dd>
+            </dl>
+          </details>
+          </div>
+          
+        </article>
+      </section>
+      <section id="payment">
+        <form id="paymentForm" action="" method="post">
+          <h2>Datos de envio</h2>
+          <hr />
+          <label for="fullName">Nombre completo</label>
+          <input type="text" id="fullName" name="fullName" required />
+
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="shippingAddress">Dirección de envío</label>
+          <input
+            type="text"
+            id="shippingAddress"
+            name="shippingAddress"
+            required
+          />
+          <h2>Datos de Pago</h2>
+          <hr />
+          <img
+            src="assets/img/payment_methods.png"
+            alt=""
+            style="width: 200px; display: block"
+          />
+          <label for="cardNumber">Número de tarjeta</label>
+          <input
+            type="tel"
+            id="cardNumber"
+            name="cardNumber"
+            inputmode="numeric"
+            pattern="[0-9]{13,16}"
+            autocomplete="cc-number"
+            required
+          />
+
+          <label for="cardName">Nombre en la tarjeta</label>
+          <input
+            type="text"
+            id="cardName"
+            name="cardName"
+            autocomplete="cc-name"
+            required
+          />
+
+          <label for="expMonth">Fecha de expiración</label>
+          <div class="expiration-fields">
+            <input
+              type="number"
+              id="expMonth"
+              name="expMonth"
+              placeholder="MM"
+              autocomplete="cc-exp-month"
+              required
+            />
+            <input
+              type="number"
+              id="expYear"
+              name="expYear"
+              placeholder="AA"
+              autocomplete="cc-exp-year"
+              required
+            />
+          </div>
+
+          <label for="cvv">CVV</label>
+          <input
+            type="text"
+            id="cvv"
+            name="cvv"
+            inputmode="numeric"
+            pattern="[0-9]{3,4}"
+            autocomplete="cc-csc"
+            required
+          />
+
+          <button type="submit">Pagar ahora</button>
+        </form>
+      </section>
+    </main>
+    <footer id="endpage">
+      <div id="footerLinks">
+        <a
+          href="https://www.instagram.com/duocuc_cl"
+          target="_blank"
+          referrerpolicy="no-referrer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="icon icon-tabler icons-tabler-filled icon-tabler-brand-instagram"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M16 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-8a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-4 5a4 4 0 0 0 -3.995 3.8l-.005 .2a4 4 0 1 0 4 -4m4.5 -1.5a1 1 0 0 0 -.993 .883l-.007 .127a1 1 0 0 0 1.993 .117l.007 -.127a1 1 0 0 0 -1 -1"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://wa.me/56936639565"
+          target="_blank"
+          referrerpolicy="no-referrer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="icon icon-tabler icons-tabler-filled icon-tabler-brand-whatsapp"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M18.497 4.409a10 10 0 0 1 -10.36 16.828l-.223 -.098l-4.759 .849l-.11 .011a1 1 0 0 1 -.11 0l-.102 -.013l-.108 -.024l-.105 -.037l-.099 -.047l-.093 -.058l-.014 -.011l-.012 -.007l-.086 -.073l-.077 -.08l-.067 -.088l-.056 -.094l-.034 -.07l-.04 -.108l-.028 -.128l-.012 -.102a1 1 0 0 1 0 -.125l.012 -.1l.024 -.11l.045 -.122l1.433 -3.304l-.009 -.014a10 10 0 0 1 1.549 -12.454l.215 -.203a10 10 0 0 1 13.226 -.217m-8.997 3.09a1.5 1.5 0 0 0 -1.5 1.5v1a6 6 0 0 0 6 6h1a1.5 1.5 0 0 0 0 -3h-1l-.144 .007a1.5 1.5 0 0 0 -1.128 .697l-.042 .074l-.022 -.007a4.01 4.01 0 0 1 -2.435 -2.435l-.008 -.023l.075 -.041a1.5 1.5 0 0 0 .704 -1.272v-1a1.5 1.5 0 0 0 -1.5 -1.5"
+            />
+          </svg>
+        </a>
+        <a href="mailto:contacto@muzyka.cl"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="icon icon-tabler icons-tabler-filled icon-tabler-mail"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z"
+            />
+            <path
+              d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z"
+            /></svg
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>

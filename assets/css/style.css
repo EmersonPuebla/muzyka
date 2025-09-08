@@ -5,10 +5,17 @@
   background: red;
 }
 
+hr {
+  color: red;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
 body {
   font-family: "Chelsea Market";
   margin: 0;
 }
+
 
 .strike {
   display: flex;
@@ -39,6 +46,12 @@ h1 {
   text-decoration: wavy;
   text-decoration-thickness: 4px;
   text-decoration-color: red;
+}
+
+#expYear,
+#expMonth {
+  width: 80px;
+  display: inline-block;
 }
 
 #navbar ul li {
