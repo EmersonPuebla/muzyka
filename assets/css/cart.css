@@ -1,13 +1,20 @@
 main {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
 }
 
 #cart {
   grid-column: 1;
+  padding: 20px;
+}
+
+.product-details {
+  padding-right: 15px;
+  padding-bottom: 10px;
 }
 
 #payment {
+  display: flex;
   grid-column: 2;
   position: sticky;
   top: 20px;
@@ -15,29 +22,128 @@ main {
   height: fit-content;
 }
 
-#cart {
-  padding: 20px;
-}
-
 #cart article {
   display: grid;
-   grid-template-columns: auto 1fr;
-   gap: 20px;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
   align-items: center;
+  padding-left: 15px;
   margin: 20px;
   border: 2px solid black;
+  border-bottom: 7px solid black;
 }
 
+#cart article h3 {
+  margin-top: -15px;
+  font-size: 23px;
+  color: rgb(201, 23, 0);
+}
+
+#cart article p {
+  opacity: 0.9;
+}
+
+#cart article button {
+  display: block;
+  color: whitesmoke;
+  background: black;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+}
+
+#cart article button:hover {
+  cursor: pointer;
+}
+
+#cart article button:active {
+  transform: translateY(5px);
+}
+
+#cart article button:focus {
+  outline: 4px solid red;
+}
+
+#cart article dl dt {
+  color: rgb(201, 23, 0);
+}
+
+#cart article a {
+  color: red;
+  text-decoration-style: double;
+}
+
+/* centra verticalmente la imagen del album */
 #cart article figure {
-  align-self: start; /* Asegura que la imagen no se estire */
+  align-self: center;
 }
 
 #cart article img {
-  width: 300px;
+  margin: 10px auto;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  /* recomendacion => https://cssgenerator.org/box-shadow-css-generator.html */
+  box-shadow: 10px 10px 0px 3px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 10px 10px 0px 3px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px 10px 0px 3px rgba(0, 0, 0, 1);
+  transition: transform 300ms;
+}
+
+#cart article img:hover {
+  transform: rotate(5deg) scale(1.1);
 }
 
 #paymentForm {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
 }
 
+/* breakpoint laptops */
+@media (max-width: 1365px) {
+  main {
+    grid-template-columns: 1fr;
+  }
 
+  #payment {
+    grid-column: 1;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #paymentForm {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 850px) {
+  #cart article {
+    grid-template-columns: 1fr;
+  }
+
+  #paymentForm {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  #cart {
+    padding: 10px;
+  }
+
+  #cart article img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  #paymentForm {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
